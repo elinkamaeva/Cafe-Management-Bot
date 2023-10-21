@@ -22,10 +22,14 @@ These instructions will help you deploy your copy of the bot on your server.
 ### Installation
 1. Clone the repository to your local machine.
 2. Install the required dependencies by running ```pip install -r requirements.txt```.
-3. Set up your Telegram bot by communicating with the BotFather and getting your token.
-4. Update the __conf.py__ file with your specific token and other relevant configurations.
-5. Deploy your Flask application.
-6. Set the webhook by pointing it to the URL provided by your deployed Flask application.
+3. Before starting the bot, you need to generate the __cafe.db__ file by running the __db.py__ script. This script will create a SQLite database with the necessary structure for the bot's operations.
+   ```bash
+   python db.py
+   ```
+4. Set up your Telegram bot by communicating with the BotFather and getting your token.
+5. Update the __conf.py__ file with your specific token and other relevant configurations.
+6. Deploy your Flask application.
+7. Set the webhook by pointing it to the URL provided by your deployed Flask application.
 
 ### Usage
 Start the bot by sending the __/start__ command. The bot will introduce its capabilities and provide a list of available commands depending on the user's authorization level.  
