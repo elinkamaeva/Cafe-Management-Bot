@@ -1,0 +1,5 @@
+flask==2.0.1
+pyTelegramBotAPI==3.8.2
+sqlite3==3.36.0
+pytz==2021.1
+telebot-calendar==1.0.1
